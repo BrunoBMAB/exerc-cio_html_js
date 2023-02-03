@@ -9,17 +9,16 @@
 </head>
 <body>
     <h1>Exercício HTML-JS</h1>
-    <form id="form-submit">
-    <input type="number" id="Valor-A" required placeholder="Valor de A" />
-    <p class="error-message">
-        O valor de A tem que ser menor que B
-    </p>
-    <input type="number" id="Valor-B" required placeholder="Valor de B" />
-    <button id="btn-submit" type="submit">Submit</button>
-    
-    <p class="sucess-messagen">
-    </p>
-    <script src="./main.js"></script>
-</form>
+    <form id="form">
+        <label for="fieldA">Campo A:</label>
+        <input type="number" id="fieldA" name="fieldA">
+        <br><br>
+        <label for="fieldB">Campo B:</label>
+        <input type="number" id="fieldB" name="fieldB">
+        <br><br>
+        <button type="submit">Submeter</button>
+        </form>
+        <div id="message"></div>
+        <script src="./main.js"></script>
 </body>
 </html>
